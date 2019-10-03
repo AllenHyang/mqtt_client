@@ -1,0 +1,16 @@
+[package]
+name = "mqtt_client"
+version = "0.1.0"
+authors = ["Allen <hy@hanyangtech.cn>"]
+edition = "2018"
+
+[lib]
+name = "mqtt_client"
+crate-type = ["dylib", "rlib","staticlib"]
+
+[dependencies]
+rumqtt = "0.30.0"
+crossbeam-channel = "0.3.9"
+mqtt311 = "0.2.0"
+serde_json = "1.0.40"
+serde = "1.0.101"
